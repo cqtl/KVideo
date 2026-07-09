@@ -81,7 +81,7 @@ export default function SettingsPage() {
         {/* Header */}
         <SettingsHeader />
 
-        <AppVersionSettings />
+        {/* <AppVersionSettings /> */}
 
         {/* Account Settings */}
         <AccountSettings />
@@ -124,7 +124,7 @@ export default function SettingsPage() {
         />
 
         {/* Per-User Source Settings (visible to all logged-in users) */}
-        <UserSourceSettings />
+        {/* <UserSourceSettings /> */}
 
         {/* Per-User Danmaku Settings (visible to all logged-in users) */}
         <UserDanmakuSettings />

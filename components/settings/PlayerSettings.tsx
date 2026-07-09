@@ -263,9 +263,9 @@ export function PlayerSettings({
                                 onChange={(e) => onDanmakuApiUrlChange(e.target.value)}
                                 className="w-full px-4 py-2.5 bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-[var(--radius-2xl)] text-[var(--text-color)] placeholder:text-[var(--text-color-secondary)]/50 focus:outline-none focus:border-[var(--accent-color)] transition-colors text-sm"
                             />
-                            <p className="text-xs text-[var(--text-color-secondary)] mt-1.5">
+                            {/* <p className="text-xs text-[var(--text-color-secondary)] mt-1.5">
                                 兼容 <a href="https://github.com/huangxd-/danmu_api" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-color)] hover:underline">danmu_api</a> 格式的弹幕聚合服务
-                            </p>
+                            </p> */}
                         </div>
                         )}
 
