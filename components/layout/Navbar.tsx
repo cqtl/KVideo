@@ -34,6 +34,10 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
             });
     };
 
+    const handleMusicLinkClick = () => {
+        window.location.href = 'https://music.lincan.cc.cd';
+    };
+
     return (
         <nav className="sticky top-0 z-[2000] pt-4 pb-2" style={{
             transform: 'translate3d(0, 0, 0)',
@@ -57,12 +61,29 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
                                     width={40}
                                     height={40}
                                     unoptimized
-                                    className="object-contain"
+                                    className="object-contain cursor-default"
                                 />
                             </div>
                             <div className="flex flex-col min-w-0">
-                                <h1 className="text-lg sm:text-2xl font-bold text-[var(--text-color)] truncate">{siteConfig.name}</h1>
-                                <p className="text-xs text-[var(--text-color-secondary)] hidden sm:block truncate">{siteConfig.description}</p>
+                                <h1 className="text-lg sm:text-2xl font-bold text-[var(--text-color)] truncate cursor-default">{siteConfig.name}</h1>
+                                <p className="text-xs text-[var(--text-color-secondary)] hidden sm:flex items-center gap-1 truncate">
+                                    <span className="header-pointer" aria-hidden="true">👉</span>
+                                    <span
+                                        className="text-[var(--text-color-secondary)] cursor-pointer"
+                                        role="link"
+                                        tabIndex={0}
+                                        aria-label="音乐聚合平台"
+                                        title="音乐聚合平台"
+                                        onClick={handleMusicLinkClick}
+                                        onKeyDown={(event) => {
+                                            if (event.key === 'Enter' || event.key === ' ') {
+                                                handleMusicLinkClick();
+                                            }
+                                        }}
+                                    >
+                                        🎵
+                                    </span>
+                                </p>
                             </div>
                         </Link>
 
