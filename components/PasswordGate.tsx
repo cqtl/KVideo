@@ -247,12 +247,12 @@ export function PasswordGate({
             <p className="text-sm text-[var(--text-color-secondary)]">
               获取密码，请看：
               <a
-                href="https://lincan.cc.cd"
+                href="https://welcome.lzlyes.cc.cd"
                 target="_blank"
                 rel="noreferrer"
                 className="underline text-[var(--accent-color)] hover:opacity-80 transition-opacity"
               >
-                https://lincan.cc.cd
+                https://welcome.lzlyes.cc.cd
               </a>
             </p>
           </div>
