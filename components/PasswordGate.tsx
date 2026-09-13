@@ -244,6 +244,17 @@ export function PasswordGate({
             <p className="text-[var(--text-color-secondary)]">
               {showManagedFields ? '请输入用户名和密码以继续' : '请输入访问密码以继续'}
             </p>
+            <p className="text-sm text-[var(--text-color-secondary)]">
+              获取密码，请看：
+              <a
+                href="https://lincan.cc.cd"
+                target="_blank"
+                rel="noreferrer"
+                className="underline text-[var(--accent-color)] hover:opacity-80 transition-opacity"
+              >
+                https://lincan.cc.cd
+              </a>
+            </p>
           </div>
 
           <div className="w-full space-y-4">
