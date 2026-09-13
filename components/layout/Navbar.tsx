@@ -35,7 +35,8 @@ export function Navbar({ onReset, isPremiumMode = false }: NavbarProps) {
     };
 
     const handleMusicLinkClick = () => {
-        window.location.href = 'https://music.lincan.cc.cd';
+      //  window.location.href = 'https://music.lincan.cc.cd';
+      window.location.href = 'https://welcome.lzlyes.cc.cd';
     };
 
     return (
