@@ -84,7 +84,7 @@ export function PremiumPasswordGate({ children }: { children: React.ReactNode })
 
     return (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black text-white">
-            <div className="w-full max-w-md p-4">
+            <div className="w-full max-w-lg p-4">
                 <form
                     id="premium-password-form"
                     onSubmit={handleUnlock}
@@ -96,7 +96,8 @@ export function PremiumPasswordGate({ children }: { children: React.ReactNode })
 
                     <div className="text-center space-y-2">
                         <h2 className="text-2xl font-bold">高级内容</h2>
-                        <p className="text-[var(--text-color-secondary)]">请输入高级内容密码以继续</p>
+                        <p className="whitespace-nowrap border-l-4 border-red-500 bg-red-500/10 px-3 py-2 text-sm font-semibold leading-6 text-red-400 rounded-r-[var(--radius-md)]">本页面仅限年满18岁的用户访问，未满18岁请立即离开！</p>
+                        <p className="text-sm text-[var(--text-color-secondary)]">若已知晓，请输入高级内容密码：wyzx，以继续</p>
                     </div>
 
                     <div className="w-full space-y-4">
@@ -110,8 +111,9 @@ export function PremiumPasswordGate({ children }: { children: React.ReactNode })
                                 }}
                                 placeholder="输入高级内容密码..."
                                 className={`w-full px-4 py-3 rounded-[var(--radius-2xl)] bg-[var(--glass-bg)] border ${error ? 'border-red-500' : 'border-[var(--glass-border)]'
-                                    } focus:outline-none focus:border-amber-500 focus:shadow-[0_0_0_3px_rgba(245,158,11,0.3)] transition-all duration-[0.4s] cubic-bezier(0.2,0.8,0.2,1) text-white placeholder-gray-500`}
+                                    } focus:outline-none focus:border-amber-500 focus:shadow-[0_0_0_3px_rgba(245,158,11,0.3)] transition-all duration-[0.4s] cubic-bezier(0.2,0.8,0.2,1) text-[var(--text-color)] placeholder-[var(--text-color-secondary)]`}
                                 autoFocus
+                                autoComplete="off"
                             />
                             {error && (
                                 <p className="text-sm text-red-500 text-center animate-pulse">
