@@ -96,7 +96,7 @@ export function PremiumPasswordGate({ children }: { children: React.ReactNode })
 
                     <div className="text-center space-y-2">
                         <h2 className="text-2xl font-bold">高级内容</h2>
-                        <p className="whitespace-nowrap border-l-4 border-red-500 bg-red-500/10 px-3 py-2 text-sm font-semibold leading-6 text-red-400 rounded-r-[var(--radius-md)]">本页面仅限年满18岁的用户访问，未满18岁请立即离开！</p>
+                        <p className="border-l-4 border-red-500 bg-red-500/10 px-3 py-2 text-sm font-semibold leading-6 text-red-400 rounded-r-[var(--radius-md)]">本页面仅限年满18岁的用户访问，<br />未满18岁请立即离开！</p>
                         <p className="text-sm text-[var(--text-color-secondary)]">若已知晓，请输入高级内容密码：wyzx，以继续</p>
                     </div>
 
